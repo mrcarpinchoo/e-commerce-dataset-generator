@@ -20,7 +20,7 @@ Synthetic e-commerce dataset generator for big data pipelines. Produces CSV file
 Even though dependencies are installed automatically, it is recommended to run the script inside a virtual environment to keep your system Python clean:
 
 ```bash
-python -m venv .venv
+python3 -m venv .venv
 
 source .venv/bin/activate  # on macOS/Linux
 ```
