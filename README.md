@@ -43,25 +43,25 @@ python dataset_generator.py \
     --products 2000 \
     --orders 1000000 \
     --order-items 4000000 \
-    --path data \
+    --path data/e-commerce \
     --chunk-size 1000000
 ```
 
 ## CLI Arguments
 
-| Argument        | Default   | Description              |
-| --------------- | --------- | ------------------------ |
-| `--customers`   | 6,000     | Number of customers      |
-| `--products`    | 2,000     | Number of products       |
-| `--orders`      | 1,000,000 | Number of orders         |
-| `--order-items` | 4,000,000 | Number of order items    |
-| `--path`        | `data/`   | Output directory         |
-| `--chunk-size`  | 1,000,000 | Number of rows per chunk |
+| Argument        | Default            | Description              |
+| --------------- | ------------------ | ------------------------ |
+| `--customers`   | 6,000              | Number of customers      |
+| `--products`    | 2,000              | Number of products       |
+| `--orders`      | 1,000,000          | Number of orders         |
+| `--order-items` | 4,000,000          | Number of order items    |
+| `--path`        | `data/e-commerce/` | Output directory         |
+| `--chunk-size`  | 1,000,000          | Number of rows per chunk |
 
 ## Output Structure
 
 ```
-data/
+data/e-commerce/
   customers/
     part_0000.csv
   products/

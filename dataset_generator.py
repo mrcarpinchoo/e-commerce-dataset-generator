@@ -291,12 +291,12 @@ def main(
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Generate synthetic e-commerce datasets.")
 
-    parser.add_argument("--customers",   type=int,  default=6_000,          help="Number of customers")
-    parser.add_argument("--products",    type=int,  default=2_000,          help="Number of products")
-    parser.add_argument("--orders",      type=int,  default=1_000_000,      help="Number of orders")
-    parser.add_argument("--order-items", type=int,  default=4_000_000,      help="Number of order items")
-    parser.add_argument("--path",        type=Path, default=Path('data'),   help="Output directory")
-    parser.add_argument("--chunk-size",  type=int,  default=1_000_000,      help="Number or rows per chunk")
+    parser.add_argument("--customers",   type=int,  default=6_000,                      help="Number of customers")
+    parser.add_argument("--products",    type=int,  default=2_000,                      help="Number of products")
+    parser.add_argument("--orders",      type=int,  default=1_000_000,                  help="Number of orders")
+    parser.add_argument("--order-items", type=int,  default=4_000_000,                  help="Number of order items")
+    parser.add_argument("--path",        type=Path, default=Path('data/e-commerce'),    help="Output directory")
+    parser.add_argument("--chunk-size",  type=int,  default=1_000_000,                  help="Number or rows per chunk")
 
     args = parser.parse_args()
 
